@@ -1,4 +1,4 @@
- https://lilianada.github.io/TTA/
+https://lilianada.github.io/TTA/
 
 TalktoAda is a playful startup with an original voice.
 
