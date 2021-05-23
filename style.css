@@ -142,10 +142,6 @@ ul{
 }
 
 h1, h2, h3{
-  height: 20em;
-  width: 20em;
-  background-size: cover;
-  box-sizing: border-box;
   font-family: 'Overlock', cursive;
 }
 
