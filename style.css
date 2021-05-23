@@ -62,7 +62,7 @@ section{
   background-size: cover;
   height: 3em;
   width: 10em;
-  margin-top: 1.5em;
+  margin-top: 1.2em 5em;
 }
 
 
@@ -138,52 +138,76 @@ ul{
   background-repeat: no-repeat;
   color: #000;
   width: 100%;
-  padding: 2em;
+  padding: 2em 5em;
+}
+
+/*Intro message about me*/
+.intro{
+  width: 30em;
+  padding: 2em 5em;
 }
 
 h1, h2, h3{
-  height: 20em;
-  width: 20em;
-  background-size: cover;
-  box-sizing: border-box;
   font-family: 'Overlock', cursive;
 }
 
 .about{
   display: flex;
-  padding: 5em;
+  
 }
 
 .main-about{
   flex-direction: row;
+  padding: 2em 5em;
 }
 
 .main-about-lilian{
   flex-direction: row;
+  padding: 2em 5em;
 }
 
-.shop.cards{
+/*Readers/visitors info form*/
+
+.forms{
   display: flex;
 }
 
-.card1, .card2, .card3, .card4, .card5{
-  height: 10em;
-  width: 10em;
+.msg{
   flex-direction: row;
-  box-shadow: 10px gray;
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 2em;
+  margin: auto;
+}
+
+.msg h2{
+  margin: 0 2em 0 2em;
+}
+
+textarea{
+ position: relative;
+ display: flex;
+ height: 10em;
+ width: 20em;
+ margin: 1em 3em 0 3em;
+ color: var(--body-text);
+ background-color: var(--body);
+ font-size: 16px;
+ border-color: var(--links);
+}
+
+.msg.form{
+  flex-direction: column;
+}
+
+.dwnload{
+  flex-direction: row;
+  padding: 2em 5em;
 }
 
 .reader-info {
   height: 15rem;
   width: 15rem;
-  background-color: var(--brown);
   border-radius: 8px;
-  padding: 2em;
-  margin: auto;
   text-align: center;
+  font-size: 16px;
 }
 
 .info {
@@ -193,14 +217,14 @@ h1, h2, h3{
 
 input, select {
   padding: 5px;
-  margin-bottom: 30px;
+  margin: 2em 0 2em 0;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--body-text);
 }
 
 input::placeholder {
-  color: #eee;
+  color: var(--body-text);
 }
 
 button {
@@ -212,16 +236,43 @@ button {
 }
   
 button:hover, .btn-item:hover {
-  background: honeydew;
+  background: var(--links);
+}
+
+.contact{
+  padding: 2em 5em;
 }
 
 
 
+/*Footer*/
 
+footer{
+  display: flex;
+  background-color: var(--brown);
+}
 
+.design{
+  flex-direction: row;
+  margin: auto;
+}
 
+.social{
+  flex-direction: row;
+  text-align: right;
+  margin: auto;
+  display: flex;
+}
 
+a i{
+  padding: 1em 2em 0 0;
+  color: var(--green);
+  margin-left: 2.5em;
+}
 
+a i:hover{
+  color: var(--links);
+}
 
 
 
@@ -282,19 +333,23 @@ li{
 
 /*Body Container*/
 .about{
-  display: flex;
-  padding: 2em;
+  display: block;
+  margin: auto;
+  width: 30em;
 }
 
-.main-about{
+.dwnload{
+  width: 30em;
+}
+
+.contact{
+  width: 30em;
+}
+
+.msg{
   flex-direction: column;
+  margin: auto;
 }
-
-.main-about-lilian{
-  flex-direction: column;
-}
-
-
 
 
 
