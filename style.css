@@ -9,9 +9,12 @@
 :root {
   --debug: 1px solid red;
     --heading: #966750ff;
+    --body: #F1EDE7ff;
     --body-part: #A5BACDff;
     --body-text: #403F3Fff;
     --links: #7B7A7Aff;
+    --green: #1F6566ff;
+    --brown: #C7998Cff;
 }
 
 html,
@@ -29,6 +32,8 @@ body {
     
 body{
   background-color: #F1EDE7;
+  
+  
   width: 100vw;
   height: 100vh;
   color: #403F3Fff;
@@ -80,7 +85,7 @@ ul{
   border: .5px solid #EDD3D4ff;
   border-radius: 3px;
   padding: 5px;
-  color: #A9B9E1ff;
+  color: var(--green);
 }
 
 .nav-icon-box{
@@ -127,7 +132,10 @@ ul{
 
 /* Body container*/
 .container{
-  background-color: var(--body-part);
+  box-sizing: border-box;
+  background-image: url(images/abstract.svg);
+  background-color: inherit;
+  background-repeat: no-repeat;
   width: 100%;
   color: #000;
   padding: 2em;
@@ -137,8 +145,7 @@ ul{
   height: 20em;
   width: 20em;
   background-size: cover;
-  border: 1em;
-  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 h1, h2{
@@ -157,19 +164,35 @@ h1, h2{
   flex-direction: row;
 }
 
+.shop.cards{
+  display: flex;
+}
+
+.card1, .card2, .card3, .card4, .card5{
+  height: 10em;
+  width: 10em;
+  flex-direction: row;
+  box-shadow: 10px gray;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
 .reader-info {
   height: 15rem;
   width: 15rem;
-  background-color: var(--heading);
+  background-color: var(--brown);
   border-radius: 8px;
   padding: 2em;
   margin: auto;
   text-align: center;
 }
+
 .info {
   display: flex;
   flex-direction: column;
   }
+
   input, select {
   padding: 5px;
   margin-bottom: 30px;
@@ -177,14 +200,17 @@ h1, h2{
   border: none;
   border-bottom: 1px solid #eee;
   }
+
   input::placeholder {
   color: #eee;
   }
 
 button {
   width: 80%;
-  background-color: var(--links);
+  border: none;
+  background-color: var(--green);
   border-radius: 8px;
+  color: var(--body);
 }
   
 button:hover, .btn-item:hover {
@@ -202,11 +228,11 @@ button:hover, .btn-item:hover {
 
 
 /* Mobile DESIGN*/
-.
+
 @media only screen and (max-width:768px){
 
 .logo{
-  display: ;
+  display: flex;
 }
 
 
