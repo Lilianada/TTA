@@ -142,6 +142,10 @@ ul{
 }
 
 h1, h2, h3{
+  height: 20em;
+  width: 20em;
+  background-size: cover;
+  box-sizing: border-box;
   font-family: 'Overlock', cursive;
 }
 
@@ -187,17 +191,17 @@ h1, h2, h3{
   flex-direction: column;
   }
 
-  input, select {
+input, select {
   padding: 5px;
   margin-bottom: 30px;
   background: transparent;
   border: none;
   border-bottom: 1px solid #eee;
-  }
+}
 
-  input::placeholder {
+input::placeholder {
   color: #eee;
-  }
+}
 
 button {
   width: 80%;
