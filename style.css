@@ -38,25 +38,38 @@ body{
   background-color: #F1EDE7;
   max-width: 100vw;
   color: #403F3Fff;
+  word-spacing: 1.5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
 }
 
 .grid{
   max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "header header" "hero hero" "about about" "descript descript" "forms forms" "contact contact" "footer footer";
+ 
 }
 
 .header-items{
+  grid-area: header;
+  /* border: 2px solid red; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--brown);
 }
 
-.logo{
-  background-size: cover;
-  height: 3em;
-  width: 10em;
-  margin-top: 1.2em;
+.header-items > .logo{
+  flex-direction: column;
+  /* border: 2px solid blue; */
 }
 
+.header-items > .navlinks{
+  flex-direction: row;
+  /* border: 2px solid purple; */
+}
 
 ul{
   flex: 1;
@@ -79,69 +92,17 @@ ul li a:hover{
   color: var(--green);
 } 
 
-/* .nav-icon-box{
-  background-color: rgba(109, 105, 105, 0.897);
-  align-self: center;
-  cursor: pointer;
-  padding: 1.2rem .5rem;
-  border-radius: .2rem;
-  display: none;
-  position: relative;
+.hero{
+  grid-area: hero;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 1em;
 }
 
-.nav-icon{
-  width: 2rem;
-  height: .2rem;
-  /* transform: translateY(1rem); 
-   background-color: white;
-}
-.nav-icon-box::before{
-  content: '';
-  position: absolute;
-  width: 2rem;
-  height: .2rem;
-  top: .8rem;
-  left: .5rem;
-  transition: all .3s;
-  background-color: white;
-}
-.nav-icon-box::after{
-  content: '';
-  position: absolute;
-  width: 2rem;
-  height: .2rem;
-  top: 1.65rem;
-  left: .5rem;
-  transition: all .3s;
-  background-color: white;
-}
-.checkbox{
-  display: none; 
-} */
-
-
-/*End of Nav and header*/
-
-
-/* Body container*/
-
-.container{
-  box-sizing: border-box;
-  color: #000;
-  width: 100%;
-}
-
-/*Intro message about me*/
-.intro{
-  background-image: url(images/abstract.svg);
-  background-size: cover;
-  height: 20em;
-}
-
-.intro h1, h3{
-  width: 30em;
+.hero h1, h3{
+  /* width: 20em; */
   margin: auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 h1, h2, h3{
@@ -149,42 +110,65 @@ h1, h2, h3{
 }
 
 .about{
+  grid-area: about;
+  /* border: 2px solid red; */
   display: flex;
-} 
-
-.main-about{
-  flex-direction: row;
-  width: 40em;
-  margin: 3em; 
-  word-spacing: 1.5px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 1.5em;
+  margin-top: 1em;
+  padding: 1em;
+  justify-content: space-between;
 }
 
-.main-about-lilian{
-  flex-direction: row;
-  width: 40em;
-  margin: 3em;
-  word-spacing: 1.5px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 1.5em;
+.lilian-pic{
+  flex-direction: column;
+  /* border: 2px solid purple; */
+  height: 30em;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
 }
 
-/*Readers/visitors info form*/
+.about-lilian{
+  flex-direction: row;
+  /* border: 2px solid green; */
+  padding: 1em 2em 0 2em;
+}
+
+.description{
+  grid-area: descript;
+  /* border: 2px solid blue; */
+  text-align: center; 
+  margin-top: 1em;
+}
 
 .forms{
+  grid-area: forms;
+  /* border: 2px solid green; */
+  justify-content: space-between;
   display: flex;
+  margin-top: 1em;
 }
 
-.msg{
+.form1{
   flex-direction: column;
-  margin: 0 auto;
+  /* border: 2px solid yellow; */
+  text-align: center;
+  line-height: 7em;
 }
 
-.msg h2{
-  margin: 2em;
+.reader-info {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  margin: 1em; 
+  /* border-radius: 8px; */
+  justify-content: center;
+} 
+
+.form2{
+  flex-direction: row;
+  /* border: 2px solid yellowgreen; */
+  text-align: center;
+  line-height: 5em;
 }
 
 textarea{
@@ -192,45 +176,23 @@ textarea{
  display: flex;
  height: 10em;
  width: 15em;
- margin: 1em 3em 0 3em;
+ margin: auto;
  color: var(--body-text);
  background-color: var(--body);
  font-size: 16px;
  border-color: var(--links);
+ text-align: center;
 }
 
 .msg-form{
-  display: flex;
-  flex-direction: column; 
-  text-align: center;
+  width: 25rem;
+  margin: 1em;
 }
-
-.dwnload{
-  flex-direction: row;
-  margin: 0 auto;
-
-  /* padding: 2em 5em; */
-}
-
-.reader-info {
-  /* height: 15rem;*/
-  display: flex;
-  flex-direction: column;
-  width: 20rem; 
-  border-radius: 8px;
-  justify-content: center;
-  font-size: 14px;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  }
 
 input, select {
   width: 100%;
   padding: 5px;
-  margin: 2em 0 2em 0;
+  margin: 2em 0;
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--body-text);
@@ -248,7 +210,7 @@ button {
   color: var(--body);
   padding: .5em 2em;
   font-size: 16px;
-  margin: auto;
+  margin:1em auto;
 }
   
 button:hover, .btn-item:hover {
@@ -256,36 +218,37 @@ button:hover, .btn-item:hover {
 }
 
 .contact{
-  padding: 2em 5em;
+  grid-area: contact;
+  /* border: 2px solid green; */
+  margin-top: 1em;
+  text-align: center;
 }
 
-
-
-/*Footer*/
-
 footer{
+  grid-area: footer;
   display: flex;
+  /* border: 2px solid brown;  */
+  margin-top: 1em;
+  justify-content: space-between;
+  padding: 1em;
   background-color: var(--brown);
 }
 
-.design{
-  margin: auto;
-  color: #000;
-}
-
-.social{
-  margin: auto;
+.copyright{
   color: #000;
 }
 
 .social-icons{
-  display: flex;
+ margin: auto;
+}
+
+.social{
+  color: #000;
 }
 
 a i{
-  padding: 1em 2em 0 0;
+  margin: 0 .6em;
   color: var(--green);
-  margin-left: 2em; 
 }
 
 a i:hover{
@@ -307,7 +270,7 @@ a:hover{
 
 /* Mobile DESIGN*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:900px){
 
   body{
     overflow-x: hidden;
@@ -316,20 +279,21 @@ a:hover{
 
   .grid{
     width: 100%;
-
-  }
-
-  .logo{
-    display: flex;
-    margin-left: 2em;
+    display: block;
   }
 
   .header-items{
     display: flex;
   }
 
+  .logo{
+   display: flex;
+    position: relative;
+    margin-left: 2em;
+  }
+
   .navlinks{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -338,7 +302,7 @@ a:hover{
     cursor: pointer;
     position: absolute;
     right: 3%;
-    top: 3.5%;
+    top: 2%;
   }
 
   .line{
@@ -357,7 +321,7 @@ a:hover{
     justify-content: center;
     /* align-items: center; */
     right: -0.5em;
-    top: -25em;
+    top: -35em;
     transition: top 0.9s;
     margin: 5px;
     position: absolute;
@@ -391,21 +355,33 @@ a:hover{
 
 
   /*Body Container*/
+.hero h1 h3{
+  width: 0;
+}
+
   .about{
+    flex-direction: colum;
     display: block;
-    width: 20em;
+    /*width: 20em; */
   }
 
-  .main-about{
-  padding: 3em 3em 0 3em;
+  .lilian-pic{
+    height: 50%;
+    width: 100%;
+  }
+
+  .about-lilian{
+    /* flex-direction: column;
+    width: 20em; */
+    padding: 2em;
+    text-align: center;
+  }
+
+  .description{
+  padding: 2em;
   margin-left: auto;
   margin-right: auto;
-  }
-
-  .main-about-lilian{
-    padding: 3em 3em 0 3em;
-    margin-left: auto;
-    margin-right: auto;
+  flex-direction: column;
   }
 
   .forms{
@@ -413,35 +389,38 @@ a:hover{
     justify-content: center;
   }
 
-  .dwnload{
-    width: 30em;
+  .form1{ 
     margin: 3em auto;
     text-align: center;
+    width: 20em;
   }
 
-  .reader-info{
-    margin-left: auto;
-    margin-right: auto;
+  .reader-info, .msg-form{
+    margin: 1em;
+    width: 17em;
   }
 
-  .contact{
-    width: 30em;
-  }
-
-  .msg{
+  .form2{
     flex-direction: column;
     margin: 3em auto;
+    width: 20em;
   }
+
+  /* .contact{
+    width: 30em;
+  } */
 
 
   /* Footer */
   footer{
     flex-direction: column;
     color: #000;
+    align-items: center;
+    padding: 1em;
   }
 
   a i{
-    padding: 1em auto;
+    padding: 1em 1em;
     color: #000;
   }
 
@@ -450,4 +429,3 @@ a:hover{
   
 
 }
-
