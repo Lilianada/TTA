@@ -1,0 +1,113 @@
+
+
+:root {
+    --debug: 1px solid red;
+      --red: #DF4347ff;
+      --body: #F1EDE7ff;
+      --body-text: #000;
+      --links: #7B7A7Aff;
+      --blue: #0460A0ff;
+      --yellow: #FFBD59ff;
+      --green: #8EB2ABff;
+  }
+
+/* HOME PAGE DESIGN STARTS HERE!!!!! */
+
+
+  .content-header{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 1.4em;
+    /* line-height: 1.2em; */
+    text-align: center;
+  }
+
+  .main-content-wrapper{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: minmax(10em, auto);
+    grid-template-areas: "hero" "intro" "interest" "service";
+    gap: 3em;
+    margin-top: 6em;
+  }
+
+/*  */
+  .hero{
+    grid-area: hero;
+    padding: 2em;
+    background-image: url(/images/3.svg);
+    background-size: cover;
+  }
+
+/*  */
+  .intro{
+    grid-area: intro;
+    padding: 2em;
+    text-align: justify;
+  }
+
+/*  */
+  img {
+    width: 8em;
+    height: 8em;
+  }
+
+  .selected-work-column{
+    grid-area: interest;
+    padding: 2em;
+  }
+
+  .selected-work-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .work-item{
+    text-align: center;
+    width: 17em;
+    margin-top: 2em;
+  }
+
+  /*  */
+
+  .service-container{
+    grid-area: service;
+    padding: 1em;
+    background-color: var(--green);
+  }
+
+  .service-content-blocks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .block{
+    width: 25em;
+    text-align: center;
+  }
+
+  .service-text-head{
+    text-align: center;
+  }
+
+  .service-content-text{
+    text-align: justify;
+  }
+  
+  .icon-image img{
+    width: 8em;
+    height: 8em;
+    
+  }

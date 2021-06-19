@@ -1,0 +1,296 @@
+
+
+:root {
+    --debug: 1px solid red;
+      --red: #DF4347ff;
+      --body: #F1EDE7ff;
+      --body-text: #000;
+      --links: #7B7A7Aff;
+      --blue: #0460A0ff;
+      --yellow: #FFBD59ff;
+      --green: #8EB2ABff;
+  }
+
+/* HOME PAGE DESIGN STARTS HERE!!!!! */
+
+
+  .content-header{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  .main-content-wrapper{
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(5em, auto);
+    margin-top: 4.5em;
+  }
+  
+/*=======HERO DESIGN======*/
+  
+  .hero-content{
+    background-image: url(/images/krystal-ng-zxtq2x_cs1w-unsplash.jpg);
+    background-size: cover;
+    padding: 13em 10em;
+    color: ivory;
+    text-align: center;
+  } 
+  
+  
+  /* .hero-image{
+   background-size: cover;
+   background-position: inherit;
+  } */
+
+  /*======SERVICES DESIGN=======*/
+  
+  .service-container{
+    padding: 1em;
+    background-color: var(--green);
+  }
+
+  .service-content-blocks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .block{
+    width: 25em;
+    text-align: center;
+  }
+
+  .service-text-head{
+    text-align: center;
+  }
+
+  .service-content-text{
+    text-align: justify;
+  }
+  
+  .icon-image img{
+    width: 8em;
+    height: 8em;
+    
+  }
+  
+/*=======INTRODUCTION DESIGN==========*/
+  .intro-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro-image img{
+    /* background-size: cover; */
+    width: 30em;
+    height: 100%;
+  }
+
+  .intro-text{
+    padding: 5em 2em;
+    text-align: justify;
+    /* background-color: tan; */
+  }
+
+/*==========BLOG CARDS DESIGN=========*/
+  
+  .popular-posts{
+    padding: 2em;
+  }
+
+  .blog-card-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2em;
+    justify-content: space-between;
+  }
+
+  .blog-content-card{
+    padding: 1em;
+    margin: auto;
+    width: 25em;
+  }
+
+  .card-img{
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 70%;
+    border-radius: .5em .5em 0 0;
+  }
+  
+  .card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  min-height: 100%;
+  background: var(--green);
+  border-radius: .5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  /* sets up hover state */
+  transition: .5s;
+  }
+      
+  .card:hover {
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+
+  .content-article {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .heading{
+    font-size: 1.5em;
+    color: var(--body-text);
+    margin: 0;
+    
+  }
+
+  article p {
+    flex: 1;
+    line-height: 1.4;
+    color: var(--body-text);
+  }
+
+  span{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(107, 105, 105);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  } 
+  
+  /*=========CCA CONTAINER DESIGN=======*/
+
+  .cca-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--green);
+  }
+
+  .cca-container1{
+    /* background-color: var(--red); */
+    color: var(--yellow);
+    padding: 5em;
+    width: 50%;
+  }
+
+  .cca-container2{
+    /* background-color: var(--blue); */
+    color: var(--yellow);
+    padding: 5em;
+    width: 50%;
+  }
+
+  /* HOME PAGE DESIGN ENDS HERE!!!!! */
+
+  
+  @media only screen and (max-width:900px){
+
+    .main-content-wrapper{
+      min-width: 20em;
+      min-height: 35em;
+    }
+  
+  /*=======HERO======= */
+    .content-header{
+      font-size: 1.5em;
+    }
+    
+    .hero-content{
+      padding: 10em 5em;
+      /* width: 100%; */
+      margin: 0;
+    } 
+    
+/*========SERVICES=======*/
+
+  .service-content-blocks{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .block-1, .block-2, .block-3,
+  .block-4, .block-5, .block-6{
+    width: 100%;
+}
+
+  .icon-image img{
+    width: 5em;
+    height: 5em;
+    
+  } 
+
+/*=======INTRODUCTION DESIGN========*/
+  .intro-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-image img{
+    /* background-size: cover; */
+    width: 100%;
+  }
+
+  .intro-text{
+   width: 100%;
+  }
+
+  /*==========BLOG CARDS DESIGN======*/
+  
+  .popular-posts{
+    padding: 2em;
+  }
+
+  .blog-card-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+  }
+
+  .blog-content-card{
+    padding: 1em;
+  }
+
+ .card-img{
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 70%;
+    border-radius: .5em .5em 0 0;
+  }
+  
+  .content-article {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+/*=========CCA CONTAINER DESIGN=======*/
+
+  .cca-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cca-container1, .cca-container2{
+    padding: 2em;
+    width: 100%;
+  }
+
+  }

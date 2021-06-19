@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Talktoada</title>
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="workstyle.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" 
@@ -18,39 +19,159 @@
   </head>
   
   <body>       
-      <!-- navbar--->
-        <nav class="navlinks">
-          <input type="checkbox" class="checkbox" id="checkbox-id">
-          <label class="nav-icon-box" for="checkbox-id">
-            <div class="nav-icon"></div>
-          </label>
-          <ul>
-            <li><a href="#" >About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a  href="#">Blog</a></li>
-            <li><a href="#">Shop</a></li>
-          </ul>
-        </nav>
-      <!--End of Navbar-->
+  <!-- navbar--->
+    <my-header></my-header>
+  <!--End of Navbar-->
 
-      <!-- Beginning of Body Container -->
+<!-- Beginning of Body Container -->
 
-    <section>
-        <h1>I am a Multifaceted Designer.</h1>
-         <p>I am Lilian Ada, a Frontend Developer, Intermediate graphics designer, fashion designer,
-          <br> artist and creative writer based in Nigeria.
-          <br> I am currently freelancing and open to any well paid Full-time job opportunity with any creative company.
-         </p>
-
-        <button>View Work</button>
+  <main class="main-content-wrapper">
+    <section class="hero">
+      <h1 class="content-header">
+        Interactive Web designer and Front-end Developer
+      </h1>
     </section>
 
-    <article>
-      <h1>elected Works</h1>
+    <section class="intro">
+      <hr>
+      <h2>
+        hey there, I'm Lilian
+      </h2>
+         
+      <p>
+        I design responsive websites, my work has a leaning towards clean,
+        minimal design with the right aesthetics and typography with a focus on content and concise communication. 
+        <br>I love the process involving how softwares are built and love to take part in creative processes,
+        working with teams and also looking for opportunities to learn new technologies. I strongly believe that with the skills 
+        and knowledge I have acquired I can collaborate to make projects successful.
+        <br>During my free time I am a creative and copywriter, I also enjoy designing dresses, as well as expressing myself through painting. I have previous experiences in networking and marketing but, also looking for opportunities where i can collaborate with positive and passionate people to bring ambitious projects to life.
+        <br><span>Currently building Udara.com</span>
+      </p>
 
-    </article>
+    </section>
 
-    <div class="">What I am about?</div>
+    <section class="selected-work-column">
+      <h1 class="content-header">Selected Work</h1>
+
+      <div class="selected-work-items">
+
+        <div class="work-item">
+          <h2>School Discovery</h2>
+          <div class="icon-image"><img src="/images/1.svg" alt="Selecetd work"></div>
+          <span>Role: Web Developer</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Laboriosam est dolore perspiciatis dolores, eligendi amet tempora dicta a commodi sapiente!
+          </p>
+          <a href="/"><button>View Project</button></a>
+        </div>
+
+        <div class="work-item">
+          <h2>TTA</h2>
+          <div class="icon-image"><img src="/images/2.svg" alt="Selected work"></div>
+          <span>Role: Web Designer</span>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Asperiores quidem nostrum incidunt! Placeat modi ut dignissimos commodi beatae eos libero.
+          </p>
+          <a href="/"><button>View Project</button></a>
+        </div>
+
+        <div class="work-item">
+          <h2>Nile Studio</h2>
+          <div class="icon-image"> <img src="/images/3.svg" alt="Selected work"></div>
+          <span>Role: Web Designer</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusamus recusandae dolor neque obcaecati vero cum assumenda voluptatem, molestiae sed vel?
+          </p>
+          <a href="/"><button>View Project</button></a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!------------------SERVICES CONTAINER------------------->
+    <section class="service-container">
+
+      <div class="service-content">
+
+        <div class="service-content-items">
+          <h1 class="content-header">
+            Why work with me?
+          </h1>
+
+          <p style="text-align: center; padding: 2em;">I do more than just creating a beauiful website. I created a space where you can ask questions, get personalized advice, 
+            and find tips on everything from self-improvement, self-care to tech & design, and even your career.
+          </p>
+
+          <div class="service-content-blocks">
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/responsive/animat-responsive.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head">Web Design</h2>
+                <p>I design responsive websites that matches your desired aesthetics 
+                  while also catering to the needs of the users.
+                </p>
+              </div>
+            </div>
+          
+
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/pencil/animat-pencil.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head">Content Writer</h2>
+                <p>I create contents for your blogs and social accounts, while also writing articles to 
+                  cover different topics in tech, design, self-care and self-improvement. I also write short 
+                  stories.
+                </p>
+              </div>
+            </div>
+          
+
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/image/animat-image.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head">Design & Art</h2>
+                <p>As a multifaceted designer, I am skilled in designing cover images, event flyers, dresses, websites
+                  and mockups. I also express my love for art through my paint brushes.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/lightbulb/animat-lightbulb.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head"> Business Strategy</h2>
+                <p>
+                  I create business and brand strategies that helps to convert traffic into 
+                  paying customers as well as provide consultation services for small business start-ups.
+                </p>
+              </div>
+            </div>
+          
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/search/animat-search.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head">SEO</h2>
+                <p>
+                  I optimize your entire website to make it easier for your customers to find you.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-content block"> 
+              <div class="icon-image"><img src="/animat-essential/image/animat-image.gif" alt="animated gif"></div>
+              <div class="service-content-text">
+                <h2 class="service-text-head">Design & Art</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Illum mollitia, aliquid officiis consequatur laboriosam  quaerat!
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </section>
 
 
 
@@ -58,8 +179,10 @@
 
 
 
+  </main>
 
-
+    <!-- Footer -->
+    <my-footer></my-footer>
       
 <script src="./script.js"></script>
   </body> 
