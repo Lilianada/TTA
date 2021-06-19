@@ -3,12 +3,11 @@
 :root {
     --debug: 1px solid red;
       --red: #DF4347ff;
-      --body: #F1EDE7ff;
+      --body: #FFF8EEff;
       --body-text: #000;
-      --links: #7B7A7Aff;
-      --blue: #0460A0ff;
-      --yellow: #FFBD59ff;
-      --green: #8EB2ABff;
+      --links: #506B3Cff;
+      --headfoot: #BD754Cff;
+      --bodypart: #F2AE1Cff;
   }
 
 /* HOME PAGE DESIGN STARTS HERE!!!!! */
@@ -48,6 +47,7 @@
     grid-area: intro;
     padding: 2em;
     text-align: justify;
+    margin: 0 auto;
   }
 
 /*  */
@@ -59,6 +59,7 @@
   .selected-work-column{
     grid-area: interest;
     padding: 2em;
+    background-color: var(--bodypart);
   }
 
   .selected-work-items{
@@ -73,7 +74,7 @@
   .work-item{
     text-align: center;
     width: 17em;
-    margin-top: 2em;
+    margin: 2em auto;
   }
 
   /*  */
@@ -110,4 +111,16 @@
     width: 8em;
     height: 8em;
     
+  }
+
+  @media screen and (max-width: 900px){
+    
+    .intro{
+      width: 25em;
+    }
+
+    .service-container{
+     width: 25em;
+      
+    }
   }

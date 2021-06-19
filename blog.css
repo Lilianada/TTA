@@ -165,6 +165,7 @@ span{
    border: red solid 1px;
    grid-area: s;
    margin-top: 2em;
+   padding: 2em;
  }
 
  .post.items{
@@ -173,10 +174,33 @@ span{
 
  .post{
   border: red solid 1px;
-  margin: 1em;
  }
 
  .side1{
   border: red solid 1px;
  }
+
+ .categories-column ol .list{
+   display: flex;
+   flex-direction: column;
+ }
   
+ .side2{
+
+ }
+
+@media screen and (max-width: 900px){
+  
+  .blog-body-nest{
+    display: block;
+  }
+  .columns-sq {
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.side-column-content{
+  
+}
+
+}

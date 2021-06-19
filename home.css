@@ -2,13 +2,11 @@
 
 :root {
     --debug: 1px solid red;
-      --red: #DF4347ff;
-      --body: #F1EDE7ff;
-      --body-text: #000;
-      --links: #7B7A7Aff;
-      --blue: #0460A0ff;
-      --yellow: #FFBD59ff;
-      --green: #8EB2ABff;
+    --body: #FFF8EEff;
+    --body-text: #000;
+    --links: #506B3Cff;
+    --headfoot: #BD754Cff;
+    --bodypart: #F2AE1Cff;
   }
 
 /* HOME PAGE DESIGN STARTS HERE!!!!! */
@@ -47,8 +45,8 @@
   /*======SERVICES DESIGN=======*/
   
   .service-container{
-    padding: 1em;
-    background-color: var(--green);
+    padding: 3em 1em;
+    /* background-color: var(--links); */
   }
 
   .service-content-blocks{
@@ -62,6 +60,7 @@
 
   .block{
     width: 25em;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -92,9 +91,9 @@
   }
 
   .intro-text{
-    padding: 5em 2em;
+    padding: 5em ;
     text-align: justify;
-    /* background-color: tan; */
+    background-color: var(--bodypart);
   }
 
 /*==========BLOG CARDS DESIGN=========*/
@@ -130,7 +129,7 @@
   flex-direction: column;
   text-decoration: none;
   min-height: 100%;
-  background: var(--green);
+  /* background: var(--bodypart); */
   border-radius: .5em;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   /* sets up hover state */
@@ -178,20 +177,20 @@
     flex-direction: row;
     width: 100%;
     background-color: var(--green);
+    justify-content: center;
   }
 
   .cca-container1{
-    /* background-color: var(--red); */
     color: var(--yellow);
     padding: 5em;
     width: 50%;
   }
 
   .cca-container2{
-    /* background-color: var(--blue); */
-    color: var(--yellow);
-    padding: 5em;
+    background-color: var(--bodypart);
+    padding: 2em;
     width: 50%;
+    align-self: center;
   }
 
   /* HOME PAGE DESIGN ENDS HERE!!!!! */

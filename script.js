@@ -13,14 +13,7 @@ class myHeader extends HTMLElement{
                             <li><a href="home.html" >Home</a></li>
                             <li><a href="index.html" >About</a></li>
                             <li><a href="work.html">Work</a></li>
-                            <li>
-                                <button onclick="myFunction()" class="dropbtn">Blog</button>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <a href="/">Tech & Design</a>
-                                    <a href="/">Lifestyle</a>
-                                    <a href="/">Career</a>
-                                </div>
-                            </li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="shop.html" >Shop</a></li>
                         </ul>
                     </div>
@@ -96,3 +89,11 @@ function myFunction() {
       }
     }
   }
+
+/* <button onclick="myFunction()" class="dropbtn">Blog</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="/">Tech & Design</a>
+                                    <a href="/">Lifestyle</a>
+                                    <a href="/">Career</a>
+                                </div>
+                                */
